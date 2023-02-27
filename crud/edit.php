@@ -1,6 +1,6 @@
 <?php
 
-require_once 'conexion.php';
+require_once '../conexion.php';
 
 $id = $_GET['id'];
 $registro = json_decode($redis->hget('student', $id), true);
@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $dni = $_POST['dni'];
     $registro = json_encode(array('nombre' => $nombre, 'apellido' => $apellido, 'dni' => $dni));
     $redis->hMset('student', $id, $registro);
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit();
 }
 ?>
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="text" name="dni" class="form-control" value="<?php echo $registro['dni']; ?>">
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary mt-3">Actualizar registro</button>
-                <a href="index.php" class="btn btn-secondary mt-3">Regresar</a>
+                <a href="../index.php" class="btn btn-secondary mt-3">Regresar</a>
             </form>
         </div>
     </div>

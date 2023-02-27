@@ -22,8 +22,8 @@
             echo '<td>' . $registro['apellido'] . '</td>';
             echo '<td>' . $registro['dni'] . '</td>';
             echo '<td>
-                    <a href="edit.php?id=' . $id  . '" class="btn btn-info btn-sm me-3 fs-6 text-white">Editar</a>
-                    <a href="delete.php?id=' . $id  . '" class="btn btn-danger btn-sm ms-3 fs-6">Eliminar</a></td>';
+                    <a href="crud/edit.php?id=' . $id  . '" class="btn btn-info btn-sm me-3 fs-6 text-white">Editar</a>
+                    <a href="crud/delete.php?id=' . $id  . '" class="btn btn-danger btn-sm ms-3 fs-6">Eliminar</a></td>';
             echo '</tr>';
         }
         ?>

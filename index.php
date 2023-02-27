@@ -13,10 +13,10 @@
             <h1>CRUD - REDIS</h1>
         </div>
         <div class="container-fluid mb-5 text-center">
-            <?php require_once 'select.php'; ?>
+            <?php require_once 'crud/select.php'; ?>
         </div>
         <div class="container mt-5 mb-5">
-            <?php require_once 'insert.php'; ?>
+            <?php require_once 'crud/insert.php'; ?>
         </div>
     </div>
 </body>
