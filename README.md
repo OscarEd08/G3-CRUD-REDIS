@@ -1,9 +1,8 @@
 # CRUD Básico usando Redis
 **Dependencias necesarias para la conexión de php con Redis**
 - Instalar [Composer](https://getcomposer.org/)
-- Instalar las siguientes librerias
+- Instalar todas las librerias que están en el composer.json con el siguiente comando
 
     ```
-    composer require predis/predis
-    composer require vlucas/phpdotenv
+    composer install
     ```
