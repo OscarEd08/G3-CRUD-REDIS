@@ -8,8 +8,9 @@
 </head>
 <body>
     <div class="container-fluid mt-2">
-        <div class="container-fluid p-5 mb-4 bg-dark text-white">
+        <div class="d-flex container-fluid p-5 mb-4 bg-dark text-white">
             <h1>CRUD - REDIS</h1>
+            <a href="crud/deleteDataTable.php" class="btn btn-light ms-auto mt-3">Limpiar tabla</a>
         </div>
         <div class="container-fluid mb-5 text-center">
             <?php require_once 'crud/select.php'; ?>
